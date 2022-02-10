@@ -1,72 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eng">
     <head>
-        <meta charset="utf-8">
-        <title>New New York | Real Estate</title>
+        <meta charset="utf-8"> 
+        <title> New New York | Real Estate</title>
+        <link rel="stylesheet" href="./css/shared.css">
+        <link rel="stylesheet" href="./css/animations.css">
     </head>
     <body>
 
         <!-- NAV -->
-        <div>
-            <div>
-                <ul>
-                    <a href="#home-page" id="link"><li>Home-page</li></a>
-                    <a href="#gallery" id="link"><li>Gallery</li></a>
-                    <a href="#contact" id="link"><li>Get in Contact</li></a>
+        <div class="wrap">
+            <div class="menu-container">
+                <ul class="menu">
+                    <a href="#home"><li>HOME</li></a>
+                    <a href="#gallery"><li>GALLERY</li></a>
+                    <a href="#contact"><li>CONTACT</li></a>
                 </ul>
             </div>
         </div>
         <!-- END NAV -->
 
-        <!-- HOME-PAGE -->
-        <div id="home-page">
-            <div>
-                <div>
-                    <span><em>New New York</em></span>
+        <!-- HOME -->
+        <div id="home">
+            <div class="container">
+                <div class="text-center">
+                    <span class="head-main">NEW NEW YORK</span>
                 </div>
             </div>
         </div>
-        <!-- END HOME-PAGE -->
-
-        <!-- DETAILS -->
-        <details>
-            <summary>What is New New York?</summary>
-            <p>New New York is a major city on the Planet Earth located in the State of New New York, which is built directly on top of the ruins of Old New York, which is still accessible via the New New York Sewer System. </p>
-        </details>
-        <!--END DETAILS-->
-
-        <!-- WEATHER -->
-        <section>
-            <article class="forecast">
-                <h1>Weather forecast for New New York</h1>
-                <article class="day-forecast">
-                    <h2>06 Feb 3022</h2>
-                    <p>Acid Rain.</p>
-                </article>
-                <article class="day-forecast">
-                    <h2>07 Feb 3022</h2>
-                    <p>Normal Rain.</p>
-                </article>
-                <article class="day-forecast">
-                    <h2>08 Feb 3022</h2>
-                    <p>Sunny.</p>
-                </article>
-            </article>
-        </section>
-        <!-- END WEATHER -->
+        <!-- END HOME -->
 
         <!-- GALLERY -->
-        <section>
-            <div id="gallery">
+        <section id="gallery">
+            <div class="container">
                 <h1>Gallery</h1>
-                <div>
+                <div class="flex-container">
 
                     <!-- PHOTO-CONTAINER 1 -->
-                    <div>
-                        <div>
-                            <img src="./Images/Thumb/thumbnail_1.jpg" alt="Applied Cryogenics">
-                            <div>
-                                <h3>Click to Enlarge</h3>
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="./Images/Thumb/thumbnail_1.jpg" alt="">
+                            <div class="photo-overlay">
+                                <h3 class="white-head">Click to Enlarge</h3>
                                 <p>We have several locations to fit your extra terrestrial needs, here in New New York</p>
                             </div>
                         </div>
@@ -74,23 +49,23 @@
                     <!-- END PHOTO-CONTAINER 1 -->
 
                     <!-- PHOTO-CONTAINER 2 -->
-                    <div>
-                        <div>
-                            <img src="./Images/Thumb/thumbnail_2.jpg" alt="Robot Arms Apts">
-                            <div>
-                                <h3>Click to Enlarge</h3>
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="./Images/Thumb/thumbnail_2.jpg" alt="">
+                            <div class="photo-overlay">
+                                <h3 class="white-head">Click to Enlarge</h3>
                                 <p>We have several locations to fit your extra terrestrial needs, here in New New York</p>
                             </div>
                         </div>
                     </div>
                     <!-- END PHOTO-CONTAINER 2 -->
-                    
+
                     <!-- PHOTO-CONTAINER 3 -->
-                    <div>
-                        <div>
-                            <img src="./Images/Thumb/thumbnail_3.jpg" alt="Taco Bellevue Hospital">
-                            <div>
-                                <h3>Click to Enlarge</h3>
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="./Images/Thumb/thumbnail_3.jpg" alt="">
+                            <div class="photo-overlay">
+                                <h3 class="white-head">Click to Enlarge</h3>
                                 <p>We have several locations to fit your extra terrestrial needs, here in New New York</p>
                             </div>
                         </div>
@@ -98,11 +73,11 @@
                     <!-- END PHOTO-CONTAINER 3 -->
 
                     <!-- PHOTO-CONTAINER 4 -->
-                    <div>
-                        <div>
-                            <img src="./Images/Thumb/thumbnail_4.jpg" alt="Madison Cube Garden">
-                            <div>
-                                <h3>Click to Enlarge</h3>
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="./Images/Thumb/thumbnail_4.jpg" alt="">
+                            <div class="photo-overlay">
+                                <h3 class="white-head">Click to Enlarge</h3>
                                 <p>We have several locations to fit your extra terrestrial needs, here in New New York</p>
                             </div>
                         </div>
@@ -110,11 +85,11 @@
                     <!-- END PHOTO-CONTAINER 4 -->
 
                     <!-- PHOTO-CONTAINER 5 -->
-                    <div>
-                        <div>
-                            <img src="./Images/Thumb/thumbnail_5.jpg" alt="Leela Apts">
-                            <div>
-                                <h3>Click to Enlarge</h3>
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="./Images/Thumb/thumbnail_5.jpg" alt="">
+                            <div class="photo-overlay">
+                                <h3 class="white-head">Click to Enlarge</h3>
                                 <p>We have several locations to fit your extra terrestrial needs, here in New New York</p>
                             </div>
                         </div>
@@ -122,11 +97,11 @@
                     <!-- END PHOTO-CONTAINER 5 -->
 
                     <!-- PHOTO-CONTAINER 6 -->
-                    <div>
-                        <div>
-                            <img src="./Images/Thumb/thumbnail_6.jpg" alt="HAL institution">
-                            <div>
-                                <h3>Click to Enlarge</h3>
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="./Images/Thumb/thumbnail_6.jpg" alt="">
+                            <div class="photo-overlay">
+                                <h3 class="white-head">Click to Enlarge</h3>
                                 <p>We have several locations to fit your extra terrestrial needs, here in New New York</p>
                             </div>
                         </div>
@@ -134,11 +109,11 @@
                     <!-- END PHOTO-CONTAINER 6 -->
 
                     <!-- PHOTO-CONTAINER 7 -->
-                    <div>
-                        <div>
-                            <img src="./Images/Thumb/thumbnail_7.jpg" alt="Cookieville Orphanarium">
-                            <div>
-                                <h3>Click to Enlarge</h3>
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="./Images/Thumb/thumbnail_7.jpg" alt="">
+                            <div class="photo-overlay">
+                                <h3 class="white-head">Click to Enlarge</h3>
                                 <p>We have several locations to fit your extra terrestrial needs, here in New New York</p>
                             </div>
                         </div>
@@ -146,11 +121,11 @@
                     <!-- END PHOTO-CONTAINER 7 -->
 
                     <!-- PHOTO-CONTAINER 8 -->
-                    <div>
-                        <div>
-                            <img src="./Images/Thumb/thumbnail_8.jpg" alt="Planet Express">
-                            <div>
-                                <h3>Click to Enlarge</h3>
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="./Images/Thumb/thumbnail_8.jpg" alt="">
+                            <div class="photo-overlay">
+                                <h3 class="white-head">Click to Enlarge</h3>
                                 <p>We have several locations to fit your extra terrestrial needs, here in New New York</p>
                             </div>
                         </div>
@@ -158,11 +133,11 @@
                     <!-- END PHOTO-CONTAINER 8 -->
 
                     <!-- PHOTO-CONTAINER 9 -->
-                    <div>
-                        <div>
-                            <img src="./Images/Thumb/thumbnail_9.png" alt="Commander Rikers Island">
-                            <div>
-                                <h3>Click to Enlarge</h3>
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="./Images/Thumb/thumbnail_9.png" alt="">
+                            <div class="photo-overlay">
+                                <h3 class="white-head">Click to Enlarge</h3>
                                 <p>We have several locations to fit your extra terrestrial needs, here in New New York</p>
                             </div>
                         </div>
@@ -175,29 +150,28 @@
         <!-- END GALLERY -->
 
         <!-- CONTACT -->
-        <section>
-            <div id="contact">
-                <div>
-                    <h1>Get in Contact</h1>
-                    <div>
-                        <h2>
-                            <span>Your new home is just around the Tube Transport bend!</span>
-                            <br />Get in contact with a realtor now!
+        <section id="contact">
+            <div class="container">
+                <div class="heading-padding">
+                    <h1 class="heading-padding">Contact</h1>
+                    <div class="reservation">
+                        <h2><span>Your new home is just around the Tube Transport bend!</span>
+                            <br>Get in contact with a realtor now!
                         </h2>
-                        <p>
-                            Please provide us with your basic contact information
+                        <p class="rsvp-text">
+                            Please provide us with your basic contact information.
                         </p>
-                        <div>
+                        <div class="form-rsvp">
                             <form action="" method="post">
-                                <input class="rsvp" type="text" value="First Name">
-                                <input class="rsvp" type="text" value="Last Name">
-                                <input class="rsvp" type="text" value="Email Address">
-                                <input class="rsvp" type="text" value="Phone Number">
+                                <input class="rsvp" type="text" value="" placeholder="First Name">
+                                <input class="rsvp" type="text" value="" placeholder="Last Name">
+                                <input class="rsvp" type="text" value="" placeholder="Email Address">
+                                <input class="rsvp" type="text" value="" placeholder="Phone Number">
                                 <div class="form-spacer">
                                     <label class="terms">Terms and Conditions</label>
                                 </div>
-                                <div>
-                                    <input type="submit" value="submit">
+                                <div class="submit">
+                                    <input type="submit" value="Submit">
                                 </div>
                             </form>
                         </div>
@@ -206,10 +180,10 @@
             </div>
         </section>
         <!-- END CONTACT -->
-
+        
         <!-- FOOTER -->
-        <div>
-            <a href="https://en.wikipedia.org/wiki/Futurama" target="new">https://www.NewNewYorkRealtors.com</a> &nbsp;|&nbsp; &copy; <time datetime="3022">3022</time>
+        <div id="footer">
+            www.NewNewYorkRealtors.com &nbsp|&nbsp &copy 3022
         </div>
         <!-- END FOOTER -->
 
