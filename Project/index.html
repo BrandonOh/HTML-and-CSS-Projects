@@ -14,7 +14,7 @@
     <!-- Fade out -->
     <script>
         document.body.classList.add("fade-out");
-    
+
         window.addEventListener('DOMContentLoaded', () => {
             document.body.classList.remove('fade-out');
         });
@@ -288,7 +288,10 @@
                     <p class="rsvp-text">
                         Please provide us with your basic contact information.
                     </p>
-                    <div class="form-rsvp">
+                    <div class="submit">
+                        <input type="button" class="button" id="showForm" onclick="showForm()" value="Show Form" style="display: none;">
+                    </div>
+                    <div id="form-rsvp">
                         <form name="contactForm" action="" method="post" onsubmit="return validateForm()">
                             <input class="rsvp" type="text" value="" name="fName" placeholder="First Name">
                             <input class="rsvp" type="text" value="" name="lName" placeholder="Last Name">
@@ -299,6 +302,7 @@
                             </div>
                             <div class="submit">
                                 <input type="submit" value="Submit">
+                                <input type="button" class="btnCancel" onclick="hideForm()" value="Hide Form">
                             </div>
                         </form>
                     </div>

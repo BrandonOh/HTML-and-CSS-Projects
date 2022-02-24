@@ -249,6 +249,7 @@ Contact Styles
     color:#13161B;
     width: 50%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .reservation form {
@@ -312,7 +313,7 @@ Contact Styles
     text-decoration: underline;
 }
 
-.submit input[type="submit"] {
+.submit input[type="submit"], input[type="button"] {
     color: rgb(225, 225, 225);
     cursor: pointer;
     border: none;
@@ -330,7 +331,7 @@ Contact Styles
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
-.submit input[type="submit"]:hover {
+.submit input[type="submit"]:hover, input[type="button"]:hover {
     color: #000;
     background-color: #8D8E8F;
     box-shadow: inset 1px 2px 15px 0 rgba(0, 0, 0, 0.5);

@@ -67,3 +67,13 @@ function validateForm() {
     }
   }
 }
+
+function showForm() {
+    document.getElementById("form-rsvp").style.display = "block";
+    document.getElementById("showForm").style.display = "none";
+}
+
+function hideForm() {
+    document.getElementById("form-rsvp").style.display = "none";
+    document.getElementById("showForm").style.display = "block";
+}
