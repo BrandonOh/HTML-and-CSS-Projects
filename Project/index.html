@@ -11,6 +11,15 @@
 </head>
 
 <body>
+    <!-- Fade out -->
+    <script>
+        document.body.classList.add("fade-out");
+    
+        window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.remove('fade-out');
+        });
+    </script>
+    <!-- Fade out end -->
 
     <!-- NAV -->
     <div class="wrap">
@@ -280,11 +289,11 @@
                         Please provide us with your basic contact information.
                     </p>
                     <div class="form-rsvp">
-                        <form action="" method="post">
-                            <input class="rsvp" type="text" value="" placeholder="First Name">
-                            <input class="rsvp" type="text" value="" placeholder="Last Name">
-                            <input class="rsvp" type="text" value="" placeholder="Email Address">
-                            <input class="rsvp" type="text" value="" placeholder="Phone Number">
+                        <form name="contactForm" action="" method="post" onsubmit="return validateForm()">
+                            <input class="rsvp" type="text" value="" name="fName" placeholder="First Name">
+                            <input class="rsvp" type="text" value="" name="lName" placeholder="Last Name">
+                            <input class="rsvp" type="text" value="" name="email" placeholder="Email Address">
+                            <input class="rsvp" type="text" value="" name="phoneNum" placeholder="Phone Number">
                             <div class="form-spacer">
                                 <label class="terms">Terms and Conditions</label>
                             </div>
