@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/shared.css">
     <link rel="stylesheet" href="./css/animations.css">
     <link rel="stylesheet" href="./css/lightbox.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./javascript/one_page_website.js" defer></script>
 </head>
 
@@ -18,7 +19,32 @@
         window.addEventListener('DOMContentLoaded', () => {
             document.body.classList.remove('fade-out');
         });
+
+        $(document).ready(function () {
+            $("#slideshow > div:gt(0)").hide();
+
+            setInterval(function () {
+                $("#slideshow > div:first")
+                    .fadeOut(1000)
+                    .next()
+                    .fadeIn(1000)
+                    .end()
+                    .appendTo("#slideshow")
+            }, 3000);
+
+            $("#slideshowText > div:gt(0)").hide();
+
+            setInterval(function () {
+                $("#slideshowText > div:first")
+                    .fadeOut(1000)
+                    .next()
+                    .fadeIn(1000)
+                    .end()
+                    .appendTo("#slideshowText")
+            }, 3000);
+        });
     </script>
+
     <!-- Fade out end -->
 
     <!-- NAV -->
@@ -270,11 +296,37 @@
 
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
     <!-- END GALLERY -->
+
+    <!-- Slide Show -->
+    <section id="gallery">
+        <div class="container">
+            <h1>Citizens of New New York</h1>
+            <div class="flex-container">
+                <div id="slideshow">
+                    <div>
+                        <img src="./Images/assets/Bender.jpg" class="citizen">
+                    </div>
+                    <div>
+                        <img src="./Images/assets/Doctor_John_A._Zoidberg.jpg" class="citizen">
+                    </div>
+                    <div>
+                        <img src="./Images/assets/Philip_J_Fry.jpg" class="citizen">
+                    </div>
+                    <div>
+                        <img src="./Images/assets/Prof_Farnsworth.jpg" class="citizen">
+                    </div>
+                    <div>
+                        <img src="./Images/assets/Turanga_Leela.jpg" class="citizen">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Slide Show End-->
 
     <!-- CONTACT -->
     <section id="contact">
@@ -289,7 +341,8 @@
                         Please provide us with your basic contact information.
                     </p>
                     <div class="submit">
-                        <input type="button" class="button" id="showForm" onclick="showForm()" value="Show Form" style="display: none;">
+                        <input type="button" class="button" id="showForm" onclick="showForm()" value="Show Form"
+                            style="display: none;">
                     </div>
                     <div id="form-rsvp">
                         <form name="contactForm" action="" method="post" onsubmit="return validateForm()">
@@ -320,7 +373,7 @@
 
     <!-- FOOTER -->
     <div id="footer">
-        www.NewNewYorkRealtors.com &nbsp|&nbsp &copy 3022
+        <a href="https://en.wikipedia.org/wiki/Futurama">www.NewNewYorkRealtors.com</a> &nbsp|&nbsp &copy 3022
     </div>
     <!-- END FOOTER -->
 

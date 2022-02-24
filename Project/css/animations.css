@@ -102,6 +102,30 @@ Photo Overlay Transition
     transform: scale(1.1);
 }
 
+/*-------------------------------------------------
+Slide Show
+-------------------------------------------------*/
+#slideshow {
+    margin: 50px auto;
+    position: relative;
+    width: 340px;
+    height: 500px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#slideshow > div {
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.citizen {
+    width:340px;
+    height: 500px;
+}
 
 /*-------------------------------------------------
 Ship Animation
