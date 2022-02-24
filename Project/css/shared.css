@@ -1,6 +1,8 @@
 html {
     font-family: sans-serif;
     font-size: 62.5%;
+    max-width: 100%;
+    overflow-x: hidden;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -14,6 +16,8 @@ body {
     background-color: #fff;
     opacity: 1;
     transition: 1s opacity;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body.fade-out {
@@ -26,7 +30,12 @@ nav {
     display: block;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -40,7 +49,8 @@ h1 {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
-h1:after { /* This is the underline */
+h1:after {
+    /* This is the underline */
     display: block;
     content: "";
     height: 2px;
@@ -83,8 +93,8 @@ p {
 }
 
 section {
-    padding-top:50px;
-    margin-top:50px
+    padding-top: 50px;
+    margin-top: 50px
 }
 
 .navbar {
@@ -160,8 +170,10 @@ HOME SECTION STYLES
     width: 100%;
     display: block;
     height: auto;
-    padding-top: 350px; /*This is spacer before the Main title logo */
-    padding-bottom: 500px; /* This is spacer after the Main title logo */
+    padding-top: 350px;
+    /*This is spacer before the Main title logo */
+    padding-bottom: 500px;
+    /* This is spacer after the Main title logo */
     color: #fff;
 }
 
@@ -246,7 +258,7 @@ Contact Styles
 }
 
 .reservation p {
-    color:#13161B;
+    color: #13161B;
     width: 50%;
     margin: 0 auto;
     text-align: center;
@@ -299,7 +311,7 @@ Contact Styles
     padding-left: 52px;
     font-size: 14px;
     line-height: 5px;
-    color:#000;
+    color: #000;
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
@@ -313,7 +325,8 @@ Contact Styles
     text-decoration: underline;
 }
 
-.submit input[type="submit"], input[type="button"] {
+.submit input[type="submit"],
+input[type="button"] {
     color: rgb(225, 225, 225);
     cursor: pointer;
     border: none;
@@ -331,7 +344,8 @@ Contact Styles
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
-.submit input[type="submit"]:hover, input[type="button"]:hover {
+.submit input[type="submit"]:hover,
+input[type="button"]:hover {
     color: #000;
     background-color: #8D8E8F;
     box-shadow: inset 1px 2px 15px 0 rgba(0, 0, 0, 0.5);
